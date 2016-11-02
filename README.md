@@ -1,2 +1,30 @@
 #Aplicación móvil del proyecto fin de grado DAM 2016
-Realizado usando Android Studio.
+
+- MarvinMobile => Proyecto en NetBeans: librería para ser implementada en la app móvil
+  - model.benefits: Beneficios y premios para los usuarios
+    - Achievement: Logros
+    - Prize: Premios
+      - PrizeDiscount: hereda de Prize, descuentos
+      - PrizeMerchant: hereda de Prize, premios físicos (merchandising)
+  - model.game: Juegos de los que se pueden organizar torneos/actividades
+    - Game: Juegos
+  - model.hosts: Sedes de los torneos
+    - TournamentHost: Sedes
+  - model.tournament: Torneos
+    - Match: Partidos/Encuentros
+    - MatchPlayer: Jugadores de un encuentro y sus puntuaciones      
+    - PointSystem: Sistema de puntuaciones
+    - Round: Es una ronda, consta de varios encuentros
+    - System: Parámetros de configuración básica de un torneo
+    - TournamentPlayer: Jugadores de un torneo
+      - PlayerIndividual: hereda de TournamentPlayer, jugadores individuales
+      - PlayerTeam: hereda de TournamentPlayer, equipos de jugadores
+  - model.users: Usuarios
+    - AchievementUser: Logros de un usuario
+    - Sanction: Sanciones de un usuario
+    - Team: Equipos
+    - TeamMember: Miembros de los equipos
+    - User: Datos de los usuarios
+  - model.utils
+    - GPS: localicación física de un lugar
+    - MyDate: fecha
